@@ -12,83 +12,128 @@ export default defineConfig({
       {
         text: '入门',
         items: [
-          { text: '21 分钟学会 Apifox', link: '/introduction' },
-          { text: 'Apifox 介绍', link: '/getting-started' },
-          { text: '快速上手', link: '/getting-started' },
-          { text: '软件使用介绍', link: '/getting-started' },
+          { text: '21 分钟学会 Apifox', link: '/getting-started/index' },
+          {
+            text: '我是接口调用者',
+            link: '/getting-started/as-api-caller',
+            items: [
+              {
+                text: '使用快捷请求',
+                link: '/getting-started/quick-debugging',
+              },
+            ],
+          },
+          {
+            text: '我是接口设计者...',
+            link: '/getting-started/as-api-designer',
+          },
+          {
+            text: '了解使用界面',
+            items: [
+              {
+                text: '文档模式与调试模式',
+                link: '/user-interface/index',
+              },
+              { text: '快捷键', link: '/user-interface/shortcuts' },
+            ],
+          },
+          {
+            text: '迁移到 Apifox',
+            collapsed: false,
+            items: [
+              { text: '我用过 Postman ...', link: '/migration/from-postman' },
+              {
+                text: '我用过 Swagger ...',
+                link: '/migration/from-swagger-or-oas',
+              },
+            ],
+          },
         ],
       },
       {
         text: '接口管理',
         items: [
-          { text: '接口设计', link: '/introduction' },
-          { text: '接口调试/用例', link: '/getting-started' },
-          { text: '调试模式', link: '/getting-started' },
-          { text: '数据模型', link: '/getting-started' },
+          { text: '接口设计', link: '/api-manage/create-and-edit-apis' },
+          { text: '接口调试/用例', link: '/api-manage/api-debugging' },
+          { text: '数据模型/复用 Schema', link: '/api-manage/schemas' },
           { text: '前置/后置操作', link: '/getting-started' },
-          { text: '快捷请求', link: '/getting-started' },
-          { text: '环境管理', link: '/getting-started' },
-          { text: '环境变量', link: '/getting-started' },
-          { text: '动态变量', link: '/getting-started' },
+          { text: '环境与环境变量', link: '/api-manage/variables' },
+          { text: '动态变量(魔法棒)', link: '/api-manage/dynamic-variables' },
+          {
+            text: 'Socket 接口',
+            collapsed: false,
+            items: [
+              { text: '创建 Socket 接口', link: '/introduction' },
+              { text: '报文数据处理器', link: '/getting-started' },
+            ],
+          },
+        ],
+      },
+      {
+        text: '自动化测试',
+        items: [
+          { text: '组织和管理测试用例', link: '/introduction' },
+          { text: '测试流程编排', link: '/introduction' },
+          { text: '测试数据', link: '/introduction' },
+          { text: '性能测试', link: '/getting-started' },
+          { text: '持续集成(Jenkins..?)', link: '/getting-started' },
+        ],
+      },
+      {
+        text: '团队协同',
+        items: [
+          { text: '成员与权限管理', link: '/introduction' },
+          { text: '项目管理', link: '/introduction' },
           { text: '接口修改历史', link: '/getting-started' },
+        ],
+      },
+      {
+        text: '分享 API 文档',
+        items: [
+          { text: '发布 API 文档站点', link: '/introduction' },
+          { text: 'API Hub', link: '/getting-started' },
+        ],
+      },
+      {
+        text: '进阶功能',
+        items: [
+          {
+            text: 'Fox 脚本引擎',
+            items: [
+              { text: 'Introduction', link: '/introduction' },
+              { text: 'Getting Started', link: '/getting-started' },
+            ],
+          },
+          { text: '网络代理', link: '/getting-started' },
           { text: '自定义字段', link: '/getting-started' },
-          { text: '接口唯一标识', link: '/getting-started' },
-          { text: '接口批量管理', link: '/getting-started' },
+          { text: '批量管理接口', link: '/getting-started' },
+          {
+            text: '接口唯一标识',
+            link: '/getting-started',
+          },
+          { text: '导入/导出', link: '/getting-started' },
         ],
       },
       {
-        text: 'IDE 插件',
+        text: '扩展与插件',
         items: [
-          { text: 'Introduction', link: '/introduction' },
-          { text: 'Getting Started', link: '/getting-started' },
-        ],
-      },
-      {
-        text: 'Socket 接口',
-        items: [
-          { text: 'Introduction', link: '/introduction' },
-          { text: 'Getting Started', link: '/getting-started' },
-        ],
-      },
-      {
-        text: '团队管理',
-        items: [
-          { text: 'Introduction', link: '/introduction' },
-          { text: 'Getting Started', link: '/getting-started' },
+          { text: 'Apifox CLI', link: '/introduction' },
+          { text: 'IDEA 插件', link: '/introduction' },
+          { text: '浏览器扩展/Agent', link: '/introduction' },
         ],
       },
       {
         text: '最佳实践',
-        items: [
-          { text: 'Introduction', link: '/introduction' },
-          { text: 'Getting Started', link: '/getting-started' },
-        ],
-      },
-      {
-        text: '导入/导出',
-        items: [
-          { text: 'Introduction', link: '/introduction' },
-          { text: 'Getting Started', link: '/getting-started' },
-        ],
-      },
-      {
-        text: '发布文档',
-        items: [
-          { text: 'Introduction', link: '/introduction' },
-          { text: 'Getting Started', link: '/getting-started' },
-        ],
+        items: [{ text: '适配 Action 风格的接口', link: '/getting-started' }],
       },
     ],
     nav: [
       {
-        text: '产品手册',
+        text: 'v2.2.23',
         items: [
-          { text: '入门', link: '/introduction' },
-          { text: '接口管理', link: '/getting-started' },
-          { text: 'IDE 插件', link: '/getting-started' },
-          { text: 'Socket 接口', link: '/getting-started' },
-          { text: '团队管理', link: '/getting-started' },
-          { text: '发布文档', link: '/getting-started' },
+          { text: '升级到新版...', link: '/introduction' },
+          { text: '更新日志', link: '/introduction' },
+          { text: '产品路线图', link: 'https://www.apifox.cn/help/openapi/' },
         ],
       },
       {
@@ -111,24 +156,19 @@ export default defineConfig({
             text: '相关文章',
             items: [
               { text: '扔掉 Postman...', link: '/introduction' },
+              { text: 'Apifox 设计理念', link: '/introduction' },
               { text: 'Getting Started', link: '/getting-started' },
             ],
           },
         ],
       },
-      {
-        text: 'v2.2.2',
-        items: [
-          { text: '升级到新版...', link: '/introduction' },
-          { text: '更新日志', link: '/introduction' },
-          { text: '产品路线图', link: '/getting-started' },
-        ],
-      },
+      { text: '开放 API', link: 'https://www.apifox.cn/help/openapi/' },
       {
         text: '联系我们',
         items: [
           { text: '用户支持', link: '/introduction' },
           { text: '私有化部署', link: '/getting-started' },
+          { text: '关于 Apifox 公司', link: '/about-company' },
         ],
       },
     ],
