@@ -19,7 +19,7 @@ export default defineConfig({
             items: [
               {
                 text: '使用快捷请求',
-                link: '/getting-started/quick-debugging',
+                link: '/api-manage/quick-debugging',
               },
             ],
           },
@@ -53,8 +53,11 @@ export default defineConfig({
       {
         text: '接口管理',
         items: [
-          { text: '接口设计', link: '/api-manage/create-and-edit-apis' },
-          { text: '接口调试/用例', link: '/api-manage/api-debugging' },
+          {
+            text: '创建/编辑接口',
+            link: '/api-manage/create-and-edit-apis',
+          },
+          { text: '接口调试/调用实例', link: '/api-manage/api-debugging' },
           { text: '数据模型/复用 Schema', link: '/api-manage/schemas' },
           { text: '前置/后置操作', link: '/getting-started' },
           { text: '环境与环境变量', link: '/api-manage/variables' },
@@ -63,28 +66,43 @@ export default defineConfig({
             text: 'Socket 接口',
             collapsed: false,
             items: [
-              { text: '创建 Socket 接口', link: '/introduction' },
-              { text: '报文数据处理器', link: '/getting-started' },
+              {
+                text: '创建 Socket 接口',
+                link: '/api-manage/socket/quickstart',
+              },
+              {
+                text: '报文数据处理器',
+                link: '/api-manage/socket/data-processor',
+              },
             ],
           },
         ],
       },
       {
         text: '自动化测试',
+        link: '/test-automation/',
+
         items: [
-          { text: '组织和管理测试用例', link: '/introduction' },
-          { text: '测试流程编排', link: '/introduction' },
-          { text: '测试数据', link: '/introduction' },
-          { text: '性能测试', link: '/getting-started' },
-          { text: '持续集成(Jenkins..?)', link: '/getting-started' },
+          { text: '组织和管理测试用例', link: '/test-automation/test-case/' },
+          { text: '测试流程编排', link: '/test-automation/test-process' },
+          { text: '测试数据', link: '/test-automation/test-data' },
+          { text: '性能测试', link: '/test-automation/performance-test' },
+          {
+            text: '持续集成(Jenkins..?)',
+            link: '/integration/integration-into-jenkins',
+          },
         ],
       },
       {
         text: '团队协同',
         items: [
-          { text: '成员与权限管理', link: '/introduction' },
-          { text: '项目管理', link: '/introduction' },
-          { text: '接口修改历史', link: '/getting-started' },
+          {
+            text: '成员与权限管理',
+            link: '/teamwork/team-invitation/',
+          },
+          { text: '项目管理', link: '/teamwork/team-invitation/' },
+          { text: '接口修改历史', link: '/api-manage/histories' },
+          { text: '多语言与国际化', link: '/teamwork/internationalization' },
         ],
       },
       {
@@ -104,22 +122,23 @@ export default defineConfig({
               { text: 'Getting Started', link: '/getting-started' },
             ],
           },
-          { text: '网络代理', link: '/getting-started' },
+          { text: '网络代理', link: '/advanced/proxy' },
           { text: '自定义字段', link: '/getting-started' },
           { text: '批量管理接口', link: '/getting-started' },
           {
             text: '接口唯一标识',
             link: '/getting-started',
           },
-          { text: '导入/导出', link: '/getting-started' },
+          { text: '导入/导出', link: '/advanced/import/README.md' },
         ],
       },
       {
-        text: '扩展与插件',
+        text: '扩展与集成',
         items: [
-          { text: 'Apifox CLI', link: '/introduction' },
-          { text: 'IDEA 插件', link: '/introduction' },
-          { text: '浏览器扩展/Agent', link: '/introduction' },
+          { text: 'Apifox CLI', link: '/integration/cli' },
+          { text: 'IDEA 插件', link: '/integration/quickstart/installtion' },
+          { text: '浏览器扩展/Agent', link: '/integration/browser-extension' },
+          { text: 'Webhook', link: '/integration/webhook' },
         ],
       },
       {
@@ -137,7 +156,7 @@ export default defineConfig({
         ],
       },
       {
-        text: '推荐阅读',
+        text: '扩展阅读',
         items: [
           {
             text: '参考资料',
@@ -155,20 +174,41 @@ export default defineConfig({
           {
             text: '相关文章',
             items: [
-              { text: '扔掉 Postman...', link: '/introduction' },
-              { text: 'Apifox 设计理念', link: '/introduction' },
-              { text: 'Getting Started', link: '/getting-started' },
+              {
+                text: '扔掉 Postman，Apifox 才是 YYDS',
+                link: '/getting-started',
+              },
+              {
+                text: '替代 Postman + Swagger！',
+                link: '/getting-started',
+              },
+              {
+                text: '带你玩转接口管理工具加解密',
+                link: '/getting-started',
+              },
+              {
+                text: '接口自动化的关键思路和解决方案',
+                link: '/getting-started',
+              },
+              {
+                text: 'Apifox Mock 功能全解析',
+                link: '/getting-started',
+              },
+              {
+                text: '多个接口如何使用同一个变量？',
+                link: '/getting-started',
+              },
             ],
           },
         ],
       },
-      { text: '开放 API', link: 'https://www.apifox.cn/help/openapi/' },
+      { text: '开放 API', link: 'https://apifox-openapi.apifox.cn' },
       {
         text: '联系我们',
         items: [
-          { text: '用户支持', link: '/introduction' },
-          { text: '私有化部署', link: '/getting-started' },
-          { text: '关于 Apifox 公司', link: '/about-company' },
+          { text: '用户支持', link: '/about/user-support' },
+          { text: '私有化部署', link: '/about/self-hosted' },
+          { text: '关于 Apifox 公司', link: '/about/company' },
         ],
       },
     ],

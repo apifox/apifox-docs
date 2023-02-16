@@ -18,14 +18,13 @@ $ npm install -g apifox-cli
 
 在 Apifox 的`测试用例`和`测试套件`选择`持续集成`，生成如下命令
 
-![截屏2022-01-18 下午2.09.33](../assets/img/test-manage/ci-1.png)
+![截屏2022-01-18 下午2.09.33](../../assets/img/test-manage/ci-1.png)
 
 点击即复制命令，运行即可
 
 ```
-apifox run http://xxx/api/v1/api-test/ci-config/xxxx/detail?token=xxxx -r html,cli 
+apifox run http://xxx/api/v1/api-test/ci-config/xxxx/detail?token=xxxx -r html,cli
 ```
-
 
 ### 运行测试用例或测试套件
 
@@ -38,16 +37,16 @@ $ apifox run examples/sample.apifox-cli.json -r cli,html,json
 - 如果想要自定义报告，可以通过 json 文件的结果集来定制自己想要的报告
 
 ### 结合 Jenkins 做持续集成
-[Jenkins 集成 Apifox](./jenkins/)
 
+[Jenkins 集成 Apifox](../integration-into-jenkins)
 
 ### CLI 如何实现文件参数传递
 
 1. 首先要回到 `接口文档-修改文档` 的请求参数处，通过批量编辑，把上传文件的路径改为变量。
 
-![image-20220505145135598](../assets/img/cli/cli-1.jpg)
+![image-20220505145135598](../../assets/img/cli/cli-1.jpg)
 
-![image-20220505145135598](../assets/img/cli/cli-2.jpg)
+![image-20220505145135598](../../assets/img/cli/cli-2.jpg)
 
 2. 保存为接口用例后，再在 `自动化测试` 中导入 `接口/接口用例` 。
 
@@ -152,4 +151,3 @@ ssl-client-cert-list.json
 ```console
 $ npm install apifox-cli@latest -g
 ```
-

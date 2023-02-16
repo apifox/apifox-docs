@@ -14,8 +14,8 @@
 
 ::: tip 新人常见问题
 
-- **如何像 Postman 那样不用提前设计接口就能快速调试？** 使用 [快捷请求](../quick-debug/) 功能。
-- **如何固定 tab，避免新打开接口的时候覆盖掉已打开的 tab？** `双击 tab 头`或者`双击树形菜单的对应内容`，用法和 `VS Code`完全一样。（修改tab里的内容后，会自动固定 tab）
+- **如何像 Postman 那样不用提前设计接口就能快速调试？** 使用 [快捷请求](./quick-debugging) 功能。
+- **如何固定 tab，避免新打开接口的时候覆盖掉已打开的 tab？** `双击 tab 头`或者`双击树形菜单的对应内容`，用法和 `VS Code`完全一样。（修改 tab 里的内容后，会自动固定 tab）
 
 :::
 
@@ -23,13 +23,13 @@
 
 打开接口文档，点击`运行` tab 即可。
 
-<img src="../../../assets/img/api-manage/api-detail-3.png" />
+<img src="../assets/img/api-manage/api-detail-3.png" />
 
- 1. 接口路径、参数名会自动从 `修改文档` 读取，无需手动输入
+1.  接口路径、参数名会自动从 `修改文档` 读取，无需手动输入
 
- 2. 参数值默认读取 `修改文档` 里的 `示例值`，也可手动修改，进行调试
+2.  参数值默认读取 `修改文档` 里的 `示例值`，也可手动修改，进行调试
 
- 3. 填写好参数后，点击`发送`按钮即可运行。
+3.  填写好参数后，点击`发送`按钮即可运行。
 
 ## 保存为用例
 
@@ -43,17 +43,18 @@
 :::
 
 ## 暂存
+
 1. 在已有参数的情况下，修改`参数名`、`数据类型`、`参数说明`，修改项左侧会有“黄色标记”，鼠标移动到“黄色标记”上时，会显示和接口文档的区别。您可以选择`复原`，和接口文档保持一致；可以选择`保存到文档`，将修改项同步到接口文档；也可以选择不操作，以当前修改项进行调试。
 
-<img src="../../../assets/img/api-manage/stash-1.png" />
+<img src="../assets/img/api-manage/stash-1.png" />
 
 2. 如果需要新增参数，可以正常添加，添加后整行的左侧会出现“黄色标记”，鼠标移动到“黄色标记”上时，会显示和接口文档的区别。
 
-<img src="../../../assets/img/api-manage/stash-2.png" />
+<img src="../assets/img/api-manage/stash-2.png" />
 
 3. 当修改项很多时，需要整体`复原`或`保存到文档`时，可以看到请求参数右上角有`不一致`文字，鼠标移动上去，根据需要选择。
 
-<img src="../../../assets/img/api-manage/stash-3.png" />
+<img src="../assets/img/api-manage/stash-3.png" />
 
 ## 前置操作/后置操作
 
@@ -61,24 +62,23 @@
 
 1. 项目维度：可以在 `项目概览` 中设置，会对整个项目下的接口/接口用例生效。
 
-<img src="../../../assets/img/api-manage/pre-processors-1.png" />
+<img src="../assets/img/api-manage/pre-processors-1.png" />
 
 2. 分组维度：点击对应的 `分组` 即可设置，会对分组下的接口/接口用例生效。
 
-<img src="../../../assets/img/api-manage/pre-processors-2.png" />
+<img src="../assets/img/api-manage/pre-processors-2.png" />
 
 3. 单个接口用例：在 `接口用例` 中设置 `前置操作/后置操作` ，只对本 `接口用例` 生效
 
-<img src="../../../assets/img/api-manage/pre-processors-4.png" />
+<img src="../assets/img/api-manage/pre-processors-4.png" />
 
 #### 断言
 
-`后置操作`支持添加`断言`，可对接口返回的数据（或响应时间）设置断言，判断是否符合预期。[查看断言功能文档](../../processor/assertion/)
+`后置操作`支持添加`断言`，可对接口返回的数据（或响应时间）设置断言，判断是否符合预期。[查看断言功能文档](/processor/assertion/)
 
 #### 提取变量
 
-`后置操作`支持添加`提取变量`，可从接口返回结果里提取数据，设置到变量（临时变量/环境变量/全局变量），方便其他接口运行的时候直接使用。[查看提取变量功能文档](../../processor/extractor/)
-
+`后置操作`支持添加`提取变量`，可从接口返回结果里提取数据，设置到变量（临时变量/环境变量/全局变量），方便其他接口运行的时候直接使用。[查看提取变量功能文档](/processor/extractor/)
 
 ## 校验响应
 
@@ -86,22 +86,21 @@
 
 1. `校验响应` 的校验范围：
 
-<img src="../../../assets/img/api-manage/api-detail-response-1.png" />
+<img src="../assets/img/api-manage/api-detail-response-1.png" />
 
 - 接口返回的 HTTP 状态码
 - 返回内容的数据格式：`JSON`、`XML`、`HTML`、`Raw`、`Binary`
-- 数据结构：仅`JSON`、`XML`可配置数据结构，关于数据结构详细说明，请查看文档：[数据结构/数据模型](../api-schema/)
+- 数据结构：仅`JSON`、`XML`可配置数据结构，关于数据结构详细说明，请查看文档：[数据结构/数据模型](./schemas)
 
 2. 如果上述 2 者一致，则显示 ”返回数据结构校验通过!“。说明真实的接口返回值是符合接口文档定义的，不需要人工核对，提高效率和准确性。
 
-<img src="../../../assets/img/api-manage/api-detail-response-3.png" width="300px"/>
+<img src="../assets/img/api-manage/api-detail-response-3.png" width="300px"/>
 
 3. 当不一致时，就会报错并提示具体是哪部分不一致。此时你可以选择修改 `接口文档-修改文档` 内的 `返回响应` ；也可以通知后端同学修改后端代码。
 
 4. `校验响应` 开关默认打开。可以在界面左下角 `设置-通用-校验响应` 关闭全局开关，注意：全局开关只会对 `接口文档-运行` 生效，不会对已保存的 `接口用例` 生效。
 
-<img src="../../../assets/img/api-manage/api-detail-response-4.png" />
-
+<img src="../assets/img/api-manage/api-detail-response-4.png" />
 
 ## 控制台
 

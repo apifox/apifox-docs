@@ -12,7 +12,7 @@
 
 Alpha 版为新功能尝鲜版，需要加官方微信群、QQ 群或钉钉群，才能参与 Alpha 版内测。
 
-加群方式：[apifox.cn/help/app/contact-us](../contact-us/)
+加群方式：[apifox.cn/help/app/contact-us](../about/user-support.md)
 
 1. Apifox 新功能都会先在 Alpha 版上线，等稳定后才会合到正式版。
 2. Alpha 版可能会有一些 bug，如遇到问题及时在群里反馈，我们会第一时间解决。
@@ -20,13 +20,3 @@ Alpha 版为新功能尝鲜版，需要加官方微信群、QQ 群或钉钉群�
 4. 已经是 Alpha 版的，直接点击软件内更新。
 
 :::
-
-<div>
-<script>
-  function gaReport(system){
-    if( window.eventTracking ){
-    window.eventTracking.report('help_button_click_app_download', { system:system }, { specificPlatform: 'ga' })
-  }
-}
-</script>
-</div>

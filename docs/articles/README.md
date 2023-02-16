@@ -7,11 +7,11 @@
 需要 [Apifox](https://www.apifox.cn/) 功能介绍 PPT 版本的（可用于团队内部分享/推广 Apifox），可点击以下链接下载。
 
 <a href='https://cdn.apifox.cn/www/assets/ppt/Apifox-API%E6%96%87%E6%A1%A3%E3%80%81API%E8%B0%83%E8%AF%95%E3%80%81API%20Mock%E3%80%81API%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B8%80%E4%BD%93%E5%8C%96%E5%8D%8F%E4%BD%9C%E5%B9%B3%E5%8F%B0.pptx'>
-<img src='../../assets/img/contact-us/ppt.png' width='350px' style='margin-bottom:20px' />
+<img src='../assets/img/contact-us/ppt.png' width='350px' style='margin-bottom:20px' />
 </a >
 
 <a href='https://cdn.apifox.cn/www/assets/ppt/Apifox-API%E6%96%87%E6%A1%A3%E3%80%81API%E8%B0%83%E8%AF%95%E3%80%81API%20Mock%E3%80%81API%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B8%80%E4%BD%93%E5%8C%96%E5%8D%8F%E4%BD%9C%E5%B9%B3%E5%8F%B0.pdf' style="margin-left:20px">
-<img src='../../assets/img/contact-us/pdf.png' width='350px' style='margin-bottom:20px' />
+<img src='../assets/img/contact-us/pdf.png' width='350px' style='margin-bottom:20px' />
 </a>
 
 :::
@@ -79,31 +79,31 @@ Apifox 是 API 文档、API 调试、API Mock、API 自动化测试一体化协�
 
 使用 Apifox 调试接口的时候，系统会根据接口文档里的定义，自动校验返回的数据结构是否正确，无需通过肉眼识别，也无需手动写断言脚本检测，非常高效！
 
-![Apifox 自动校验数据结构](../../assets/img/introduce/return-to-check.png)
+![Apifox 自动校验数据结构](../assets/img/introduce/return-to-check.png)
 
 #### 4、“可视化”设置断言
 
 设置断言：
 
-![Apifox 设置断言](../../assets/img/introduce/assertion-1.png)
+![Apifox 设置断言](../assets/img/introduce/assertion-1.png)
 
 运行后，查看断言结果：
 
-![](../../assets/img/introduce/assertion-2.png)
+![](../assets/img/introduce/assertion-2.png)
 
 #### 5、“可视化”设置提取变量
 
-![](../../assets/img/introduce/extractor-1.png)
+![](../assets/img/introduce/extractor-1.png)
 
 #### 6、支持数据库操作
 
-![](../../assets/img/introduce/database-1.png)
+![](../assets/img/introduce/database-1.png)
 
 #### 7、“零配置”Mock 出非常人性化的数据
 
 先放一张图对比下 [Apifox](https://www.apifox.cn/) 和其他同类工具 `零配置` mock 出来的数据效果：
 
-![Apifox Mock 数据结果对比同类工具](../../assets/img/introduce/mock-result-compare.png)
+![Apifox Mock 数据结果对比同类工具](../assets/img/introduce/mock-result-compare.png)
 
 可以看出 Apifox `零配置` Mock 出来的数据和真实情况是非常接近的，前端开发可以直接使用，而无需再手动写 mock 规则。
 
@@ -118,10 +118,9 @@ Apifox 是 API 文档、API 调试、API Mock、API 自动化测试一体化协�
 
 Apifox 项目可“在线分享” API 文档，分享出去的 API 文档可设置为公开或需要密码访问，非常方便与外部团队协作。
 
-体验地址：[https://petstore.apifox.cn/](https://petstore.apifox.cn/
-)
+体验地址：[https://petstore.apifox.cn/](https://petstore.apifox.cn/)
 
-![](../../assets/img/introduce/shared-doc-1.png)
+![](../assets/img/introduce/shared-doc-1.png)
 
 #### 9、代码自动生成
 
@@ -145,39 +144,39 @@ Apifox 项目可“在线分享” API 文档，分享出去的 API 文档可设
 
 ### 四、更多 Apifox 功能截图
 
-![接口调试](../../assets/img/introduce/light-apifox-api-case-1.png)
+![接口调试](../assets/img/introduce/light-apifox-api-case-1.png)
 
-![](../../assets/img/introduce/light-apifox-api-case-2.png)
+![](../assets/img/introduce/light-apifox-api-case-2.png)
 
-![](../../assets/img/introduce/light-apifox-api-definition-1.png)
+![](../assets/img/introduce/light-apifox-api-definition-1.png)
 
-![](../../assets/img/introduce/light-apifox-schema-1.png)
+![](../assets/img/introduce/light-apifox-schema-1.png)
 
-![](../../assets/img/introduce/light-apifox-api-definition-2.png)
+![](../assets/img/introduce/light-apifox-api-definition-2.png)
 
-![](../../assets/img/introduce/light-apifox-test-case-1.png)
+![](../assets/img/introduce/light-apifox-test-case-1.png)
 
-![](../../assets/img/introduce/light-apifox-test-case-2.png)
+![](../assets/img/introduce/light-apifox-test-case-2.png)
 
-![](../../assets/img/introduce/light-apifox-test-case-3.png)
+![](../assets/img/introduce/light-apifox-test-case-3.png)
 
-![](../../assets/img/introduce/light-apifox-test-case-4.png)
+![](../assets/img/introduce/light-apifox-test-case-4.png)
 
-![](../../assets/img/introduce/light-apifox-mock-1.png)
+![](../assets/img/introduce/light-apifox-mock-1.png)
 
-![](../../assets/img/introduce/light-apifox-mock-2.png)
+![](../assets/img/introduce/light-apifox-mock-2.png)
 
-![](../../assets/img/introduce/light-apifox-mock-3.png)
+![](../assets/img/introduce/light-apifox-mock-3.png)
 
-![](../../assets/img/introduce/light-apifox-codegen-1.png)
+![](../assets/img/introduce/light-apifox-codegen-1.png)
 
-![](../../assets/img/introduce/light-apifox-codegen-2.png)
+![](../assets/img/introduce/light-apifox-codegen-2.png)
 
-![](../../assets/img/introduce/light-apifox-setting-import-1.png)
+![](../assets/img/introduce/light-apifox-setting-import-1.png)
 
-![](../../assets/img/introduce/light-apifox-setting-export-1.png)
+![](../assets/img/introduce/light-apifox-setting-export-1.png)
 
-![Apifox 多种主题色可选](../../assets/img/introduce/light-apifox-theme-1.png)
+![Apifox 多种主题色可选](../assets/img/introduce/light-apifox-theme-1.png)
 
 ### 五、 Apifox 下载地址
 

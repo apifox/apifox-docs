@@ -13,20 +13,20 @@
 
 ::: tip 新人常见问题
 
-- **如何像 Postman 那样不用提前设计接口就能快速调试？** 使用 [快捷请求](../quick-debug/) 功能。
-- **如何固定 tab，避免新打开接口的时候覆盖掉已打开的 tab？** `双击 tab 头`或者`双击树形菜单的对应内容`，用法和 `VS Code`完全一样。（修改tab里的内容后，会自动固定 tab）
+- **如何像 Postman 那样不用提前设计接口就能快速调试？** 使用 [快捷请求](./quick-debugging) 功能。
+- **如何固定 tab，避免新打开接口的时候覆盖掉已打开的 tab？** `双击 tab 头`或者`双击树形菜单的对应内容`，用法和 `VS Code`完全一样。（修改 tab 里的内容后，会自动固定 tab）
 
 :::
 
 ## 快速上手
 
-1. 点击左侧搜索框旁边的 `+` 号按钮即可打开新建窗口，也可使用 [快捷键](../../shortcuts/) Ctrl(⌘) + N。
+1. 点击左侧搜索框旁边的 `+` 号按钮即可打开新建窗口，也可使用 [快捷键](/user-interface/shortcuts) Ctrl(⌘) + N。
 
-   <img src="../../../assets/img/api-manage/api-detail-1.png" width="300px" />
+   <img src="../assets/img/api-manage/api-detail-1.png" width="300px" />
 
 2. 在打开的窗口中，直接定义接口相关信息。
 
-   <img src="../../../assets/img/api-manage/api-detail-2.png" width="700px" />
+   <img src="../assets/img/api-manage/api-detail-2.png" width="700px" />
 
 ## 接口路径
 
@@ -34,7 +34,7 @@
 
 :::tip 注意
 
-1. **接口路径** 建议`不要包含 HTTP 协议及域名`，这部分建议在 [环境管理](../environments/) 的`前置URL`里设置，接口调试时的 URL 会自动加上当前环境的`前置URL`。
+1. **接口路径** 建议`不要包含 HTTP 协议及域名`，这部分建议在 [环境管理](./environments) 的`前置URL`里设置，接口调试时的 URL 会自动加上当前环境的`前置URL`。
 
 2. 特殊情况需在接口路径要带上`HTTP 协议及域名`的，系统也能支持，但不建议这么做。接口调试时，系统如检测到接口路径是以`http://`或`https://`起始的，会自动忽略当前环境里前置 URL。
 3. Apifox 中的 `Path 参数`是以大括号包裹起来表示，而非冒号起始表示。**正确示例**：`/pets/{id}`，**错误示例**`/pets/:id`。
@@ -57,7 +57,7 @@
 
 ### Body 参数
 
-<img src="../../../assets/img/api-manage/api-detail-body-1.png" />
+<img src="../assets/img/api-manage/api-detail-body-1.png" />
 
 #### Body 参数类型
 
@@ -71,7 +71,7 @@
 
 :::tip 注意
 
-- Body 参数类型为`json`或`xml`时，需要设置数据结构，并且数据结构可以引用`数据模型`，详细说明请查看文档：[数据结构/数据模型](../api-schema/)。
+- Body 参数类型为`json`或`xml`时，需要设置数据结构，并且数据结构可以引用`数据模型`，详细说明请查看文档：[数据结构/数据模型](./schemas)。
 
 :::
 
@@ -94,23 +94,23 @@
 
 :::
 
-更多关于变量的说明请查看文档：[环境变量/全局变量/临时变量](../variables/)。
+更多关于变量的说明请查看文档：[环境变量/全局变量/临时变量](./variables)。
 
 ## 返回响应
 
-<img src="../../../assets/img/api-manage/api-detail-response-1.png" />
+<img src="../assets/img/api-manage/api-detail-response-1.png" />
 
 返回响应定义主要包含以下几部分
 
 - 接口返回的 HTTP 状态码
 - 返回内容的数据格式：`JSON`、`XML`、`HTML`、`Raw`、`Binary`
-- 数据结构：仅`JSON`、`XML`可配置数据结构，关于数据结构详细说明，请查看文档：[数据结构/数据模型](../api-schema/)
+- 数据结构：仅`JSON`、`XML`可配置数据结构，关于数据结构详细说明，请查看文档：[数据结构/数据模型](./schemas)
 
 :::tip 注意
 
 - 当一个接口在不同情况下会返回不同数据结构时，可设置多个`返回响应`。点击`返回响应`模块右上方的`+ 新建`即可添加。
-- 定义好数据结构后，`接口调试`时，系统会自动校验返回的数据是否符合定义的数据结构，非常方便，更多说明请查看文档：[接口调试/接口用例](../api-case/)。
-- 定义好数据结构后，`使用 mock 功能`时，系统会自动根据定义的数据结构 mock 出非常人性化的数据，非常方便，更多说明请查看文档：[Mock 数据](../../mock/)
+- 定义好数据结构后，`接口调试`时，系统会自动校验返回的数据是否符合定义的数据结构，非常方便，更多说明请查看文档：[接口调试/接口用例](./api-debugging)。
+- 定义好数据结构后，`使用 mock 功能`时，系统会自动根据定义的数据结构 mock 出非常人性化的数据，非常方便，更多说明请查看文档：[Mock 数据](/mock/)
 
 :::
 
@@ -122,12 +122,11 @@
 
 设置方法：打开`项目设置`->`公共响应`，在这里管理公共响应。
 
-
-<img src="../../../assets/img/api-manage/api-detail-response-2.png"  />
+<img src="../assets/img/api-manage/api-detail-response-2.png"  />
 
 ## 响应示例
 
-<img src="../../../assets/img/api-manage/api-detail-response-example-1.png" />
+<img src="../assets/img/api-manage/api-detail-response-example-1.png" />
 
 设置返回响应的示例数据，方便查阅接口文档的人快速了解数据结构。
 
@@ -139,5 +138,4 @@
 
 支持设置 `OperationId`属性，导出`OpenAPI `格式时会将此处的值导出到 Operation 对象的 OperationId 里
 
-![截屏2022-01-14 下午8.45.12](../../../assets/img/api-manage/operationld.png)
-
+![截屏2022-01-14 下午8.45.12](../assets/img/api-manage/operationld.png)

@@ -17,7 +17,8 @@ TODOs.md
 .temp
 
 # Docs dist directory
-/vuepress
+/vitepress
+docs/.vitepress/dist/
 
 # Typescript build dist
 packages/@vuepress/shared-utils/lib/

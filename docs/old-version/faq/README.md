@@ -1,30 +1,20 @@
 # 常见问题
 
-
-
 ### 1. Apifox 是否收费？
 
-[Apifox](https://www.apifox.cn/) 公网版 (SaaS版) 免费，私有化部署版收费。
-
-
+[Apifox](https://www.apifox.cn/) 公网版 (SaaS 版) 免费，私有化部署版收费。
 
 ### 2. 登录（Auth）态如何实现？
 
-请参考文档：[登录态（Auth）如何处理](../best-practices/auth/)
-
-
+请参考文档：[登录态（Auth）如何处理](/best-practices/auth/)
 
 ### 3. 接口发送请求前需要调用登录接口获取 token 放在 header，如何实现？
 
-请参考文档：[登录态（Auth）如何处理](../best-practices/auth/)
-
-
+请参考文档：[登录态（Auth）如何处理](/best-practices/auth/)
 
 ### 4. B 接口请求参数依赖于 A 接口返回的数据，如何实现？
 
-请参考文档：[接口之间如何传递数据](../best-practices/api-relations/)
-
-
+请参考文档：[接口之间如何传递数据](/best-practices/api-relations/)
 
 ### 5. 同项目下有不同域名的接口，如何处理？
 
@@ -34,25 +24,19 @@
 
 **方案三**：给不同域名接口设置不同环境，通过切换环境来运行不同域名下的接口。**不推荐本方案！**
 
-
-
 ### 6. 脚本如何读取或修改接口请求信息？
 
 请参考文档：[ 脚本读取/修改接口请求信息](../scripts/examples/request-handle/)
 
-
-
 ### 7. 是否支持查询数据库字段作为参数传给接口？
 
-支持，请参考文档：[数据库操作](../processor/database/)
-
-
+支持，请参考文档：[数据库操作](/processor/database/)
 
 ### 8. 数据是存储在本地还是云端？可否离线使用？可否私有化部署？
 
 目前 Apifox 有 `Saas 版` 和`私有化部署版` 。
 
- `Saas 版` 是免费的，数据都是存在云端的，需要联网才能使用。
+`Saas 版` 是免费的，数据都是存在云端的，需要联网才能使用。
 
 `私有化部署版` 是收费的，数据存在使用者企业内部，不连外网也可以使用。
 
@@ -78,10 +62,10 @@
 
 ### 11. 如何打开多个项目？
 
- 1. 在团队页面可以打开新窗口
+1.  在团队页面可以打开新窗口
 
 <img src="../../assets/img/getting-started/new-window-1.png" />
 
- 2. Mac 客户端可以在 Dock 栏右键 `打开主窗口`
+2.  Mac 客户端可以在 Dock 栏右键 `打开主窗口`
 
 <img src="../../assets/img/getting-started/new-window-2.png" width="200px" />
